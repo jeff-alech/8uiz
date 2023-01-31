@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="kbc"><span id="quiz">8uiz</span></header>
+    <section>
+    <div id="vidas">
+        <p id="vida">Vida:</p>
+        <p id="nvida">5</p>
+    </div>
+    <div>
+        <p id="timer">0:00</p>
+    </div>
+    <div id="pontos">
+        <p id="dica">Pontos:</p>
+        <p id="ndica">100</p>
+    </div>
+    <div>
+        <p id="euSou">Eu sou<span id="pontinhos">...</span></p>
+        <p type="text" id="resposta" placeholder="RESPOSTA" readonly></p>
+    </div>
+    <div id="caixaDeDicas">
+        <p id="d1">-</p>
+        <p id="d2">-</p>
+        <p id="d3">-</p>
+        <p id="d4">-</p>
+        <p id="d5">-</p>
+        <p id="d6">-</p>
+        <p id="d7">-</p>
+        <p id="d8">-</p> 
+    </div>
+    <div>
+        <input type="button" value="Dica 1" id="btd1" class="tip" onclick="tip1()">
+        <input type="button" value="Dica 2" id="btd2" class="tip" onclick="tip2()">
+        <input type="button" value="Dica 3" id="btd3" class="tip" onclick="tip3()">
+        <input type="button" value="Dica 4" id="btd4" class="tip" onclick="tip4()">
+        <input type="button" value="Dica 5" id="btd5" class="tip" onclick="tip5()">
+        <input type="button" value="Dica 6" id="btd6" class="tip" onclick="tip6()">
+        <input type="button" value="Dica 7" id="btd7" class="tip" onclick="tip7()">
+        <input type="button" value="Dica 8" id="btd8" class="tip" onclick="tip8()">
+    </div>    
+    <div>
+        <input type="text" id="resposta2" placeholder="Já sabe o que sou?" keypress="13">
+        <input type="button" value="go" id="euSei" onclick="sei()"> 
+    </div>
+    </section>
+    <footer id="foot">&copy;Jeff Alech</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
